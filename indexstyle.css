@@ -7,13 +7,23 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     max-width: 400px;
     margin: 0 auto;
 }
 
-video {
-   display : block;
+h3 {
+    max-width: 400px;
+    margin: 1 auto;
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(196, 0, 179, 0.842);
+    border-radius: 1px;
 }
 
 form {
