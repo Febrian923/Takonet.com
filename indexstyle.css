@@ -1,6 +1,10 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
+    background-image: url("gradient_3.jpg");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
 }
 
 h1 {
@@ -22,8 +26,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(196, 0, 179, 0.842);
-    border-radius: 0pc;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.842);
+    border-radius: 1pc;
 }
 
 form {
@@ -34,7 +38,7 @@ form {
 label, input, select, textarea {
     display: block;
     margin-bottom: 10px;
-    color : #aa0077
+    color : #000000
 }
 
 input[type="submit"] {
