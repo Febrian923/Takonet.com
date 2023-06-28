@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAKONET</title>
     <link rel="icon" type="image/x-icon" href="Takonet - Copy/takonet_icon.png">
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
@@ -13,11 +14,10 @@
 </head>
 
 <body> 
-    <body class="p-3 m-0 border-0 bd-example m-0 border-0"></body>
-        <nav class="navbar navbar-dark bg-dark fixed-top"
+        <nav class="navbar navbar-dark bg-dark" >
           <div class="container-fluid">
-            <img src="Takonet - Copy/takonet_icon.png" alt="Takonet Icon"style="width:140px;height:110px;">
-            <a class="navbar-brand" href="index.html">Takonet</a>
+            <img src="Takonet - Copy/takonet_icon.png" alt="Takonet Icon"style="width:100px;height:70px;">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Times New Roman', Times, serif; font-size:5ch;">TAKONET</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,13 +52,35 @@
             </div>
           </div>
         </nav> 
-
+<img src="Takonet - Copy/t1.jpg" alt="template"width=700px;height=500px style=";margin-top: 40px;margin-left: 300px;">
+<img src="Takonet - Copy/tako_Icon-removebg-preview.png" alt="icon"width=100px;height=100px float = right class="roundedcircle">
     <h1>Start-Up Macaron Jepang</h1>
-    <div class = "video-container"style="background-color: #ff0000;margin: 0;padding: 0;display: flex;justify-content: center;height: 100%;width: 100%;">
-        <video class="video-player" src="path_to_your_video.mp4"></video>
-        <div class="play-button" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);background-color: rgba(0, 0, 0, 0.6);width: 80px;height: 80px;border-radius: 50%;display: flex;justify-content: center;align-items: center;cursor: pointer;transition: background-color 0.3s;"></div>
+    <div class = "video-container"style="background-color: black; margin-top: 40px;margin-left: 475px;padding: 50;display: flex; justify-content: center; align-items: center;">
+      <video class="video-player" src="Takonet - Copy/macaron.mp4"autoplay></video>
+        <div class="play-button" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);background-color: rgba(117, 32, 156, 0.781);width: 80px;height: 80px;border-radius: 50%;display: flex;justify-content: center;align-items: center;cursor: pointer;transition: background-color 0.3s;"></div>
     </div>
-
+    <script> 
+      var myVideo = document.getElementById("video1"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 560; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 320; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 420; 
+      } 
+      </script> 
     </div>
         <form id="surveyForm">
         <h2>Kolom Komentar</h2>
@@ -103,5 +125,6 @@
                 document.getElementById("comment").value = "";
             });
         </script>
+
 </body>
 </html>
