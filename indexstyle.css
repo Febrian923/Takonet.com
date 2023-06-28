@@ -7,6 +7,10 @@ body {
     background-position: center; 
     background-size: cover; 
 }
+section{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .navbar {
     position: fixed;
     top: 0;
@@ -88,6 +92,9 @@ label, input, select, textarea {
     color : #000000
 }
 
+.bold-hr{
+    border-top: 4px solid rgb(0, 0, 0);
+}
 
 input[type="submit"] {
     margin-top: 5px;
