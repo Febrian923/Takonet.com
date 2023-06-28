@@ -1,48 +1,62 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 20px;
+    background-color: blueviolet;
     background-image: url("gradient_3.jpg");
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
 }
+navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+}
 
-h1 {
+h1{
     text-align: center;
 }
 
 h2 {
-    max-width: 400px;
-    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid hsl(0, 3%, 34%);
+    padding: 10px;
+    text-align: center;
 }
 
 h3 {
-    max-width: 400px;
-    margin: 1 auto;
+    margin-bottom: 10px;
+    border: 1px solid hsl(0, 3%, 34%);
+    padding: 10px;
+    text-align: center;
 }
 
 
 .video-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.842);
-    border-radius: 1pc;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(248, 2, 2, 0.2);
 }
 
 form {
+    border: 2px solid rgb(61, 61, 61);
+    padding: 45px;
     max-width: 400px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
+
 
 label, input, select, textarea {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color : #000000
 }
 
+
 input[type="submit"] {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 textarea {
