@@ -1,6 +1,11 @@
 html { overflow-x: hidden; }
 
 body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-right: 200px;
+    
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -9,9 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-p, span { color: #999; }
+p, span { color: #9900ff; }
 hr { 
-    border-top-color: #CCC; 
+    border-top-color: #8400ff; 
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -82,21 +87,6 @@ hr {
     border-radius: 0;
     border-color: #0CC;
     font-size: 1.2rem;
-}
-
-.tm-search-button {
-    width: 60px;
-    height: 60px;
-    border: none;
-    background-color: #0CC;
-    transition: all 0.3s ease;
-}
-
-.tm-search-button:hover { background-color: #09b6b6; }
-
-.tm-search-icon {
-    color: white;
-    font-size: 1.3rem;
 }
 
 .tm-post-link {
@@ -228,12 +218,15 @@ hr {
 
 .tm-copyright { text-align: right; }
 
-/* Single Post page */
-hr.tm-hr-primary { border-top: 5px solid #0CC; }
+
+hr.tm-hr-primary { border-top: 5px solid rgb(195, 0, 255); }
+
 
 video {
     width: 100%;
     height: auto;
+    margin-right: 100vh;
+    margin-top: 10vh;
 }
 
 .tm-comment {
@@ -260,12 +253,6 @@ figure { margin: 0; }
 figcaption { line-height: 1.4; }
 
 .tm-post-full { max-width: 600px; }
-
-.tm-post-sidebar {
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: 0;
-}
 
 .tm-pt-20 { padding-top: 20px; }
 .tm-pt-30 { padding-top: 30px; }
@@ -304,26 +291,6 @@ a:hover figcaption { color: #056767; }
     height:477px;
     width:100%;
 }
-
-.tm-social-links li { 
-    list-style: none; 
-    display: inline-block;
-}
-
-.tm-social-links li a {
-    display: block;
-    color: white;
-    background-color: #0CC;
-    width: 45px;
-    height: 45px;    
-    margin-right: 15px;    
-}
-
-.tm-social-links li a i { transition: all 0.3s ease; }
-.tm-social-links li a:hover i.fa-facebook { color: #3b5998; }
-.tm-social-links li a:hover i.fa-twitter { color: #00acee; }
-.tm-social-links li a:hover i.fa-youtube { color: #c4302b; }
-.tm-social-links li a:hover i.fa-instagram { color: #3f729b; }
 
 .tm-contact-right { padding-left: 55px; }
 .tm-contact-form { max-width: 488px; }
@@ -430,7 +397,11 @@ a:hover figcaption { color: #056767; }
     }
 
     .tm-search-form { justify-content: flex-start; }
-    .tm-main { padding: 60px 10px; }
+    .tm-main { 
+        padding: 100px 10px;
+        margin-left: 0;
+        margin-right: auto
+    }
 
     .tm-prev-next-wrapper,
     .tm-paging-wrapper {
